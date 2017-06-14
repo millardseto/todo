@@ -40,7 +40,7 @@ window.onload = function(){
     for(var i=0; i<tasks.length; i++) {
       // create list item and text
       var li = document.createElement("li");
-      li.innerText = "Assigned To: " + tasks[i].assignTo + ", Level: " + tasks[i].level + ", Task: " + tasks[i].task;
+      li.innerText = "Assigned To: " + tasks[i].assignTo + ", Level: " + levels[tasks[i].level] + ", Task: " + tasks[i].task;
       li.className = "list-group-item"; // bootstrap
 
 
@@ -48,6 +48,16 @@ window.onload = function(){
       ul.appendChild(li);
     }
   }
+
+  // dictionary object for lookups
+  levels =
+  [
+      "Very Easy",
+      "Easy",
+      "Medium",
+      "Hard",
+      "Very Hard"
+  ];
 
   // global container for tasks
   tasks = [];
