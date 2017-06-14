@@ -20,6 +20,9 @@ window.onload = function(){
 
     // update list
     showList();
+
+    // reset form
+    form.reset();
   }
 
 
