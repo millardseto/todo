@@ -27,6 +27,7 @@ window.onload = function(){
       // create list item and text
       var li = document.createElement("li");
       li.innerText = tasks[i].task;
+      li.className = "list-group-item"; // bootstrap
 
 
       // add the list item to the list
