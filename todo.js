@@ -36,6 +36,16 @@ window.onload = function(){
     var ul = document.querySelector('ul');
     ul.innerText = "";
 
+    // dictionary object for lookups - might need to be global var in the future.
+    var levels =
+    [
+        "Very Easy",
+        "Easy",
+        "Medium",
+        "Hard",
+        "Very Hard"
+    ];
+
     // go through each task
     for(var i=0; i<tasks.length; i++) {
       // create list item and text
@@ -48,18 +58,10 @@ window.onload = function(){
     }
   }
 
-  // global dictionary object for lookups
-  levels =
-  [
-      "Very Easy",
-      "Easy",
-      "Medium",
-      "Hard",
-      "Very Hard"
-  ];
 
-  // global container for tasks
-  tasks = [];
+
+  // container for tasks
+  var tasks = [];
 
   // submit button
   var form = document.forms[0];
