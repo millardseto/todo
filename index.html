@@ -3,9 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>TODO</title>
+    <link rel="stylesheet" href="todo.css">
   </head>
   <body>
-    
+    <div id="container">
+      <ul>
 
+      </ul>
+    </div>
+
+    <form>
+      <label for="task">Task:</label>
+      <input type="text" id="task" name="task" value="">
+
+      <fieldset>
+        <legend>Assigned To:</legend>
+
+        <input type="radio" id="Jeremy" name="assignTo" value="Jeremy">
+        <label for="Jeremy">Jeremy</label>
+
+        <input type="radio" id="Amelia" name="assignTo" value="Amelia">
+        <label for="Amelia">Amelia</label>
+
+        <input type="radio" id="Charlie" name="assignTo" value="Charlie">
+        <label for="Charlie">Charlie</label>
+      </fieldset>
+
+
+      <label for="level"></label>
+      <select id="level" name="level">
+        <option value="0">Very Easy</option>
+        <option value="1">Easy</option>
+        <option value="2">Medium</option>
+        <option value="3">Hard</option>
+        <option value="4">Very Hard</option>
+      </select>
+
+      <input type="submit" id="submit" name="submit" value="Submit">
+    </form>
+
+    <script type="text/javascript" src='todo.js' ></script>
   </body>
 </html>
