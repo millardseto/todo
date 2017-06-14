@@ -43,13 +43,12 @@ window.onload = function(){
       li.innerText = "Assigned To: " + tasks[i].assignTo + ", Level: " + levels[tasks[i].level] + ", Task: " + tasks[i].task;
       li.className = "list-group-item"; // bootstrap
 
-
       // add the list item to the list
       ul.appendChild(li);
     }
   }
 
-  // dictionary object for lookups
+  // global dictionary object for lookups
   levels =
   [
       "Very Easy",
