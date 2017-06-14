@@ -1,4 +1,9 @@
 window.onload = function(){
+
+
+  /**
+   * addTask - Adds a task to the TODO list and then shows it
+   */
   function addTask(){
     // block the default behavior
     event.preventDefault();
@@ -17,6 +22,12 @@ window.onload = function(){
     showList();
   }
 
+
+  /**
+   * showList - creates a listItem(s) for each task
+   *
+   * @return {type}  description
+   */
   function showList(){
     // clear existing content
     var ul = document.querySelector('ul');
@@ -26,7 +37,7 @@ window.onload = function(){
     for(var i=0; i<tasks.length; i++) {
       // create list item and text
       var li = document.createElement("li");
-      li.innerText = tasks[i].task;
+      li.innerText = "Assigned To: " + tasks[i].assignTo + ", Level: " + tasks[i].level + ", Task: " + tasks[i].task;
       li.className = "list-group-item"; // bootstrap
 
 
